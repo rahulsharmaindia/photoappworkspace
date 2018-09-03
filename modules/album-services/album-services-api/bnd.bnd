@@ -1,0 +1,9 @@
+Bundle-Name: album-services-api
+Bundle-SymbolicName: org.rsystems.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	org.rsystems.exception,\
+	org.rsystems.model,\
+	org.rsystems.service,\
+	org.rsystems.service.persistence
+-includeresource: META-INF/service.xml=../album-services-service/service.xml

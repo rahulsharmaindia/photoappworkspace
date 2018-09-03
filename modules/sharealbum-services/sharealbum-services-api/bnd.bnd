@@ -1,0 +1,9 @@
+Bundle-Name: sharealbum-services-api
+Bundle-SymbolicName: org.rsystems.share.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	org.rsystems.share.exception,\
+	org.rsystems.share.model,\
+	org.rsystems.share.service,\
+	org.rsystems.share.service.persistence
+-includeresource: META-INF/service.xml=../sharealbum-services-service/service.xml

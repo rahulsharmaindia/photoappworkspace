@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping auto-import="false" default-lazy="false">
+	<import class="org.rsystems.share.model.Album" />
+	<class name="org.rsystems.share.model.impl.AlbumImpl" table="Share_Album">
+		<composite-id class="org.rsystems.share.service.persistence.AlbumPK" name="primaryKey">
+			<key-property name="album_id" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+			<key-property name="shared_user" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		</composite-id>
+		<property name="album_name" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+</hibernate-mapping>

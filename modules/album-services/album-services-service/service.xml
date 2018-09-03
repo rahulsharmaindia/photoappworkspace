@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.0.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_0_0.dtd">
+
+<service-builder package-path="org.rsystems">
+	<namespace>Album</namespace>
+	<!--<entity data-source="sampleDataSource" local-service="true" name="Foo" remote-service="false" session-factory="sampleSessionFactory" table="foo" tx-manager="sampleTransactionManager uuid="true"">-->
+	<entity local-service="true" name="Data" remote-service="true">
+
+		<!-- PK fields -->
+
+		<column name="album_id" primary="true" type="int" />
+
+		<!-- Other fields -->
+		<column name="album_name" type="String" />	
+		<column name="album_path" type="String" />	
+		<column name="creation_date" type="Date" />	
+		<column name="created_by" type="String" />		
+		<column name="access" type="int" />		
+
+		<!-- References -->
+
+		<reference entity="AssetEntry" package-path="com.liferay.portlet.asset" />
+		<reference entity="AssetTag" package-path="com.liferay.portlet.asset" />
+	</entity>
+</service-builder>

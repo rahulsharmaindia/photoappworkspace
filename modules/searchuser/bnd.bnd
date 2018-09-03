@@ -1,0 +1,4 @@
+Bundle-Name: searchuser
+Bundle-SymbolicName: org.rsystems.searchuser
+Bundle-Version: 1.0.0
+Export-Package: org.rsystems.constants

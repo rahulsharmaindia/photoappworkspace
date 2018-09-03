@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation=" http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean class="org.rsystems.service.impl.DataLocalServiceImpl" id="org.rsystems.service.DataLocalService" />
+	<bean class="org.rsystems.service.impl.DataServiceImpl" id="org.rsystems.service.DataService" />
+	<bean class="org.rsystems.service.persistence.impl.DataPersistenceImpl" id="org.rsystems.service.persistence.DataPersistence" parent="basePersistence" />
+</beans>

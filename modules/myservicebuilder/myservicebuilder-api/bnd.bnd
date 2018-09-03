@@ -1,0 +1,9 @@
+Bundle-Name: myservicebuilder-api
+Bundle-SymbolicName: com.rsystems.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.rsystems.exception,\
+	com.rsystems.model,\
+	com.rsystems.service,\
+	com.rsystems.service.persistence
+-includeresource: META-INF/service.xml=../myservicebuilder-service/service.xml

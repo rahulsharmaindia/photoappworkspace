@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.rsystems.model.PhotoAppConfiguration">
+		<field name="uuid" type="String" />
+		<field name="configName" type="String" />
+		<field name="value1" type="String" />
+		<field name="value2" type="String" />
+		<field name="value3" type="String" />
+		<field name="value4" type="String" />
+	</model>
+</model-hints>

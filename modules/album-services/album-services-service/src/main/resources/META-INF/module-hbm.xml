@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping auto-import="false" default-lazy="false">
+	<import class="org.rsystems.model.Data" />
+	<class name="org.rsystems.model.impl.DataImpl" table="Album_Data">
+		<id name="album_id" type="int">
+			<generator class="assigned" />
+		</id>
+		<property name="album_name" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="album_path" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="creation_date" type="org.hibernate.type.TimestampType" />
+		<property name="created_by" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="shared_with" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property column="access_" name="access" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+	</class>
+</hibernate-mapping>

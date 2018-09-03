@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="org.rsystems.model.Data">
+		<field name="album_id" type="int" />
+		<field name="album_name" type="String" />
+		<field name="album_path" type="String" />
+		<field name="creation_date" type="Date" />
+		<field name="created_by" type="String" />
+		<field name="shared_with" type="String" />
+		<field name="access" type="int" />
+	</model>
+</model-hints>
